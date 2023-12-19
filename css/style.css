@@ -368,4 +368,13 @@ body {
   text-align: center;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 185px;
+  padding: 26px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
