@@ -357,6 +357,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Header Styles
+---------------------------------------------*/
 header {
   display: flex;
   justify-content: center;
@@ -371,12 +373,16 @@ header img {
   padding: 26px 0;
 }
 
+/* Body Styles
+---------------------------------------------*/
 @media screen and (min-width: 968px) {
   body {
     background-color: #9356dc;
   }
 }
 
+/* Location Section Styles
+---------------------------------------------*/
 .circle {
   border-radius: 50%;
   width: 34px;
@@ -387,5 +393,14 @@ header img {
   color: #000;
   text-align: center;
 }
+
+/* Explore Section Styles
+---------------------------------------------*/
+/* How It Works Section Styles
+---------------------------------------------*/
+/* Restaurant Card Section Styles
+---------------------------------------------*/
+/* Footer Styles
+---------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */

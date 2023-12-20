@@ -1,5 +1,7 @@
 // Properties for the home page
 
+/* Header Styles
+---------------------------------------------*/
 header {
     display: flex;
     justify-content: center;
@@ -13,12 +15,18 @@ header {
     }
 }
 
+
+/* Body Styles
+---------------------------------------------*/
 body {
     @include desktop-only {
         background-color: $primary-color;
     }
 }
 
+
+/* Location Section Styles
+---------------------------------------------*/
 .circle {
     border-radius: 50%;
     width: 34px;
@@ -29,3 +37,22 @@ body {
     color: #000;
     text-align: center;
 }
+
+
+/* Explore Section Styles
+---------------------------------------------*/
+
+
+
+/* How It Works Section Styles
+---------------------------------------------*/
+
+
+
+/* Restaurant Card Section Styles
+---------------------------------------------*/
+
+
+
+/* Footer Styles
+---------------------------------------------*/
