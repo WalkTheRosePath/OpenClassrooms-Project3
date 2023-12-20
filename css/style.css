@@ -1,3 +1,7 @@
+/* Colors
+---------------------------------------------*/
+/* 
+---------------------------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -351,12 +355,16 @@ html {
   box-sizing: inherit;
 }
 
+/* Body Styles
+---------------------------------------------*/
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
+/* Footer Styles
+---------------------------------------------*/
 /* Header Styles
 ---------------------------------------------*/
 header {
@@ -398,9 +406,7 @@ header img {
 ---------------------------------------------*/
 /* How It Works Section Styles
 ---------------------------------------------*/
-/* Restaurant Card Section Styles
----------------------------------------------*/
-/* Footer Styles
+/* Restaurants Section Styles
 ---------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
