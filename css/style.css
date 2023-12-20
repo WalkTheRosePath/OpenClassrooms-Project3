@@ -357,6 +357,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 968px) {
+  header {
+    justify-content: flex-start;
+  }
+}
+header img {
+  width: 185px;
+  padding: 26px 0;
+}
+
+@media screen and (min-width: 968px) {
+  body {
+    background-color: #9356dc;
+  }
+}
+
 .circle {
   border-radius: 50%;
   width: 34px;
@@ -366,15 +386,6 @@ body {
   border: 3px solid #000;
   color: #000;
   text-align: center;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
-header img {
-  width: 185px;
-  padding: 26px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

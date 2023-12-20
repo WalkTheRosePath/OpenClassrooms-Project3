@@ -1,4 +1,8 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
 @import "./base/normalize";
 @import "./base/box-sizing";
 @import "./base/page";
+
 @import "./pages/home";
