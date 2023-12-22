@@ -92,10 +92,11 @@ body {
         height: 50px;
         border-radius: 25px;
         margin: 10px 0 50px;
+        //TODO Add drop shadow
 
         &:hover {
-        background-image: linear-gradient(lighten($color-secondary, 10%), lighten($color-primary, 10%));
-        // TODO Darken drop shadow slightly
+            background-image: linear-gradient(lighten($color-secondary, 10%), lighten($color-primary, 10%));
+            // TODO Darken drop shadow slightly
         }
     }
 }
