@@ -5,13 +5,14 @@
 header {
     display: flex;
     justify-content: center;
+
     @include desktop-only {
         justify-content: flex-start;
     }
 
     img {
-        width: 185px;
-        padding: 26px 0;
+        width: 175px;
+        padding: 26px 0 20px 0;
     }
 }
 
@@ -37,6 +38,10 @@ body {
     gap: 14px;
 }
 
+.location p {
+    font-weight: bold;
+}
+
 /* Explore Section Styles
 ---------------------------------------------*/
 .explore {
@@ -45,6 +50,17 @@ body {
     align-items: center;
 }
 
+.explore h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    padding: 38px 0 44px 0;
+}
+
+.explore button {
+    color: #fff;
+    background-image: linear-gradient($color-secondary, $color-primary);
+}
 
 /* How It Works Section Styles
 ---------------------------------------------*/
@@ -66,8 +82,6 @@ body {
     }
 }
 
-
-
 .circle {
     border-radius: 50%;
     width: 34px;
@@ -82,5 +96,3 @@ body {
 
 /* Restaurants Section Styles
 ---------------------------------------------*/
-
-
