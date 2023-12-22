@@ -383,15 +383,17 @@ header img {
   width: 175px;
   padding: 26px 0 20px 0;
 }
-
-/* General Body Styles
----------------------------------------------*/
 @media screen and (min-width: 968px) {
-  body {
-    background-color: #9356dc;
+  header img {
+    padding-left: 30px;
   }
 }
 
+/* General Body Styles
+---------------------------------------------*/
+body {
+  background-color: #f6f6f6;
+}
 /* Location Section Styles
 ---------------------------------------------*/
 .location {
@@ -403,9 +405,20 @@ header img {
   box-shadow: inset 0 6px 5px -5px rgba(0, 0, 0, 0.2);
   gap: 14px;
 }
+@media screen and (min-width: 968px) {
+  .location {
+    justify-content: flex-start;
+  }
+}
 
 .location p {
   font-weight: bold;
+}
+
+@media screen and (min-width: 968px) {
+  .fa-location-dot {
+    padding-left: 30px;
+  }
 }
 
 /* Explore Section Styles
@@ -418,9 +431,20 @@ header img {
 
 .explore h1 {
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 800;
   margin: 0;
   padding: 38px 0 44px 0;
+}
+@media screen and (min-width: 968px) {
+  .explore h1 {
+    font-size: 30px;
+  }
+}
+
+.explore p {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 30px;
 }
 
 .explore button {

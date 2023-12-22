@@ -13,17 +13,20 @@ header {
     img {
         width: 175px;
         padding: 26px 0 20px 0;
+
+        @include desktop-only {
+            padding-left: 30px;
+        }
     }
 }
 
 /* General Body Styles
 ---------------------------------------------*/
 body {
+    background-color: $color-general-bg;
 
     // Media query for desktop
-    @include desktop-only {
-        background-color: $color-primary
-    }
+    @include desktop-only {}
 }
 
 /* Location Section Styles
@@ -36,10 +39,23 @@ body {
     background-color: $color-location-bg-color;
     box-shadow: inset 0 6px 5px -5px $color-shadow;
     gap: 14px;
+
+    // Media query for desktop
+    @include desktop-only {
+        justify-content: flex-start;
+    }
 }
 
 .location p {
     font-weight: bold;
+}
+
+.fa-location-dot {
+
+    // Media query for desktop
+    @include desktop-only {
+        padding-left: 30px;
+    }
 }
 
 /* Explore Section Styles
@@ -52,9 +68,20 @@ body {
 
 .explore h1 {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 800;
     margin: 0;
     padding: 38px 0 44px 0;
+
+    // Media query for desktop
+    @include desktop-only {
+        font-size: 30px;
+    }
+}
+
+.explore p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 30px;
 }
 
 .explore button {
