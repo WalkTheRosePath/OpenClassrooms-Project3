@@ -23,7 +23,6 @@ header {
 /* General Body Styles
 ---------------------------------------------*/
 body {
-    background-color: $color-general-bg;
 
     // Media query for desktop
     @include desktop-only {}
@@ -64,29 +63,41 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    background-color: $color-general-bg;
 
-.explore h1 {
-    font-size: 25px;
-    font-weight: 800;
-    margin: 0;
-    padding: 38px 0 44px 0;
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0;
+        padding: 38px 0 44px 0;
 
-    // Media query for desktop
-    @include desktop-only {
-        font-size: 30px;
+        // Media query for desktop
+        @include desktop-only {
+            font-size: 30px;
+        }
     }
-}
 
-.explore p {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 30px;
-}
+    p {
+        font-size: 18px;
+        padding: 0 30px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
 
-.explore button {
-    color: #fff;
-    background-image: linear-gradient($color-secondary, $color-primary);
+    button {
+        color: #fff;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        border: none;
+        width: 220px;
+        height: 50px;
+        border-radius: 25px;
+        margin: 10px 0 50px;
+
+        &:hover {
+        background-image: linear-gradient(lighten($color-secondary, 10%), lighten($color-primary, 10%));
+        // TODO Darken drop shadow slightly
+        }
+    }
 }
 
 /* How It Works Section Styles
@@ -94,32 +105,31 @@ body {
 .how-it-works {
     display: flex;
     flex-direction: column;
-}
 
-.how-it-works-flex-container {
-    display: flex;
-    justify-content: center;
+    &-flex-container {
+        display: flex;
+        justify-content: center;
 
-    &.button-inactive {
-        background-color: $color-inactive-button-bg;
+        &.button-inactive {
+            background-color: $color-inactive-button-bg;
+        }
+
+        &.button-active {
+            background-color: $color-active-button-bg;
+        }
     }
 
-    &.button-active {
-        background-color: $color-active-button-bg;
+    .circle {
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        padding: 8px;
+        background: #fff;
+        border: 3px solid #000;
+        color: #000;
+        text-align: center;
     }
 }
-
-.circle {
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    padding: 8px;
-    background: #fff;
-    border: 3px solid #000;
-    color: #000;
-    text-align: center;
-}
-
 
 /* Restaurants Section Styles
 ---------------------------------------------*/
