@@ -18,5 +18,27 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        padding-top: 6px;
+    }
+}
+
 /* Footer Styles
 ---------------------------------------------*/
+footer {
+    color: #fff;
+    background-color: $color-footer-bg;
+    font-size: 14px;
+    padding: 20px 20px 30px;
+
+    h2 {
+        font-family: 'shrikhand', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+}
