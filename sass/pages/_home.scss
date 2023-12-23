@@ -92,11 +92,11 @@ body {
         height: 50px;
         border-radius: 25px;
         margin: 10px 0 50px;
-        //TODO Add drop shadow
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 
         &:hover {
-            background-image: linear-gradient(lighten($color-secondary, 10%), lighten($color-primary, 10%));
-            // TODO Darken drop shadow slightly
+            background-image: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
         }
     }
 }
@@ -107,30 +107,72 @@ body {
     display: flex;
     flex-direction: column;
 
-    &-flex-container {
+    &-large-flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 60px;
+    }
+
+    &-small-flex-container {
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
 
-        &.button-inactive {
-            background-color: $color-inactive-button-bg;
-        }
-
-        &.button-active {
-            background-color: $color-active-button-bg;
-        }
+    h2 {
+        padding: 40px 0 30px 20px;
     }
 
     .circle {
         border-radius: 50%;
-        width: 34px;
-        height: 34px;
-        padding: 8px;
-        background: #fff;
-        border: 3px solid #000;
-        color: #000;
+        width: 22px;
+        height: 22px;
+        border: none;
+        color: #fff;
+        background-color: $color-primary;
         text-align: center;
+        font-size: 12px;
+        line-height: 12px;
+        padding-top: 6px;
+        margin-right: -13px;
+        z-index: 1;
     }
+
+    &-list-item {
+        display: flex;
+        gap: 16px;
+        font-weight: 700;
+        padding: 28px;
+        background-color: $color-general-bg;
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+
+        i {
+            color: darkgray;
+            width: 20px;
+            font-size: 18px;
+        }
+    }
+
+    .featured {
+        color: $color-primary;
+    }
+
+    .active {
+        background-color: lighten($color-primary, 35%);
+    }
+
 }
 
 /* Restaurants Section Styles
 ---------------------------------------------*/
+
+.restaurants {
+    background-color: $color-general-bg;
+
+    h2 {
+        padding: 40px 0 30px 20px;
+    }
+}
