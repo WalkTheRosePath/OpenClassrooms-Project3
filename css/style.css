@@ -449,6 +449,20 @@ header img {
   }
 }
 
+/* Flex Container Holding Explore & How It Works Sections 
+---------------------------------------------*/
+.explore-and-how-it-works-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 968px) {
+  .explore-and-how-it-works-flex-container {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+  }
+}
+
 /* Explore Section Styles
 ---------------------------------------------*/
 .explore {
@@ -456,6 +470,12 @@ header img {
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 968px) {
+  .explore {
+    background-color: #fff;
+    justify-content: center;
+  }
 }
 .explore h1 {
   font-size: 25px;
@@ -465,7 +485,7 @@ header img {
 }
 @media screen and (min-width: 968px) {
   .explore h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 .explore p {
@@ -483,6 +503,7 @@ header img {
   border-radius: 25px;
   margin: 10px 0 50px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  transition: background-image 0.3s, box-shadow 0.3s;
 }
 .explore button:hover {
   background-image: linear-gradient(#ff93e1, #a16be0);
@@ -498,6 +519,7 @@ header img {
 .how-it-works-large-flex-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding-bottom: 70px;
 }

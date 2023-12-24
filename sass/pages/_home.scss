@@ -57,6 +57,22 @@ body {
     }
 }
 
+/* Flex Container Holding Explore & How It Works Sections 
+---------------------------------------------*/
+.explore-and-how-it-works-flex-container {
+    display: flex;
+    flex-direction: column;
+
+    // Media query for desktop
+    @include desktop-only {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+}
+
+
 /* Explore Section Styles
 ---------------------------------------------*/
 .explore {
@@ -64,6 +80,12 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: $color-general-bg;
+
+    // Media query for desktop
+    @include desktop-only {
+        background-color: #fff;
+        justify-content: center;
+    }
 
     h1 {
         font-size: 25px;
@@ -73,7 +95,7 @@ body {
 
         // Media query for desktop
         @include desktop-only {
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 
@@ -93,6 +115,7 @@ body {
         border-radius: 25px;
         margin: 10px 0 50px;
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        transition: background-image 0.3s, box-shadow 0.3s;
 
         &:hover {
             background-image: linear-gradient(lighten($color-secondary, 5%), lighten($color-primary, 5%));
@@ -110,6 +133,7 @@ body {
     &-large-flex-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
         padding-bottom: 70px;
     }
