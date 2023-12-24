@@ -393,8 +393,10 @@ footer h2 {
   font-size: 16px;
   padding-bottom: 10px;
 }
-footer i {
-  margin-right: 10px;
+
+.footer-icon {
+  width: 30px;
+  font-size: 12px;
 }
 
 /* Header Styles
@@ -527,7 +529,7 @@ header img {
   font-weight: 700;
   padding: 28px;
   background-color: #f6f6f6;
-  width: 320px;
+  width: 330px;
   border-radius: 20px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
@@ -549,7 +551,7 @@ header img {
   background-color: #f6f6f6;
 }
 .restaurant h2 {
-  padding: 50px 0 30px 20px;
+  padding: 50px 0 20px 20px;
 }
 .restaurant-cards-flex-container {
   display: flex;
@@ -559,7 +561,7 @@ header img {
 
 .card {
   display: flex;
-  width: 310px;
+  width: 340px;
   border-radius: 24px;
   border: none;
   overflow: hidden;
@@ -571,11 +573,23 @@ header img {
   object-fit: cover;
   width: 100%;
 }
+.card h3 {
+  font-size: 17px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+.card p {
+  font-size: 16px;
+  padding-bottom: 6px;
+}
 .card-content {
   padding: 6px 6px 6px 10px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+}
+.card .heart-icon {
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

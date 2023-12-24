@@ -145,7 +145,7 @@ body {
         font-weight: 700;
         padding: 28px;
         background-color: $color-general-bg;
-        width: 320px;
+        width: 330px;
         border-radius: 20px;
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 
@@ -173,7 +173,7 @@ body {
     background-color: $color-general-bg;
 
     h2 {
-        padding: 50px 0 30px 20px;
+        padding: 50px 0 20px 20px;
     }
 
     &-cards-flex-container {
@@ -185,7 +185,7 @@ body {
 
 .card {
     display: flex;
-    width: 310px;
+    width: 340px;
     border-radius: 24px;
     border: none;
     overflow: hidden;
@@ -198,10 +198,26 @@ body {
         width: 100%;
     }
 
+    h3 {
+        font-size: 17px;
+        padding-top: 5px;
+        padding-bottom: 3px;
+    }
+
+    p {
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+
     &-content {
         padding: 6px 6px 6px 10px;
         background-color: #fff;
         display: flex;
         flex-direction: column;
     }
+
+    .heart-icon {
+        font-size: 22px;
+    }
+
 }
