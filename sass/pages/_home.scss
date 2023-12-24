@@ -111,7 +111,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding-bottom: 60px;
+        padding-bottom: 70px;
     }
 
     &-small-flex-container {
@@ -145,7 +145,7 @@ body {
         font-weight: 700;
         padding: 28px;
         background-color: $color-general-bg;
-        width: 300px;
+        width: 320px;
         border-radius: 20px;
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 
@@ -166,14 +166,42 @@ body {
 
 }
 
-/* Restaurants Section Styles
+/* Restaurant Section Styles
 ---------------------------------------------*/
 
-.restaurants {
+.restaurant {
     background-color: $color-general-bg;
 
     h2 {
-        padding: 40px 0 30px 20px;
+        padding: 50px 0 30px 20px;
+    }
+
+    &-cards-flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
+.card {
+    display: flex;
+    width: 310px;
+    border-radius: 24px;
+    border: none;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &-content {
+        padding: 6px 6px 6px 10px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+}
