@@ -209,15 +209,14 @@ body {
         padding-bottom: 6px;
     }
 
+    .heart-icon {
+        font-size: 22px;
+    }
+
     &-content {
         padding: 6px 6px 6px 10px;
         background-color: #fff;
         display: flex;
         flex-direction: column;
     }
-
-    .heart-icon {
-        font-size: 22px;
-    }
-
 }
