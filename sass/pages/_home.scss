@@ -135,12 +135,23 @@ body {
     display: flex;
     flex-direction: column;
 
+    // Media query for desktop
+    @include desktop-only {
+        flex-direction: row;
+    }
+
     &-large-flex-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
         padding-bottom: 70px;
+
+        // Media query for desktop
+        @include desktop-only {
+            padding-top: 30px;
+            padding-left: 20px;
+        }
     }
 
     &-small-flex-container {
@@ -150,6 +161,11 @@ body {
 
     h2 {
         padding: 40px 0 30px 20px;
+
+        // Media query for desktop
+        @include desktop-only {
+            padding: 50px 10px 0 0;
+        }
     }
 
     .circle {
@@ -214,9 +230,9 @@ body {
         @include tablet-only {
             flex-direction: row;
             justify-content: space-around;
-            gap: none;
+            gap: 0;
             flex-wrap: wrap;
-            padding: 20px 0;
+            padding: 20px 0 50px;
         }
 
         // Media query for desktop
