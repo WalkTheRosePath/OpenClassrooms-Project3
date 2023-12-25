@@ -608,12 +608,13 @@ header img {
   padding-top: 5px;
   padding-bottom: 3px;
 }
+.card .heart-icon {
+  font-size: 22px;
+  margin-left: auto;
+}
 .card p {
   font-size: 16px;
   padding-bottom: 6px;
-}
-.card .heart-icon {
-  font-size: 22px;
 }
 .card-content {
   padding: 6px 6px 6px 10px;
