@@ -93,6 +93,11 @@ body {
         margin: 0;
         padding: 38px 0 44px 0;
 
+        // Media query for tablet
+        @include tablet-only {
+            font-size: 32px;
+        }
+
         // Media query for desktop
         @include desktop-only {
             font-size: 40px;
@@ -209,7 +214,7 @@ body {
 
 .card {
     display: flex;
-    width: 340px;
+    width: 335px;
     border-radius: 24px;
     border: none;
     overflow: hidden;

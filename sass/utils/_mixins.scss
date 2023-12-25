@@ -1,5 +1,13 @@
+// Mixins to create multiple rulesets
+
 @mixin desktop-only {
-    @media screen and (min-width: 968px) {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
         @content;
     }
 }
