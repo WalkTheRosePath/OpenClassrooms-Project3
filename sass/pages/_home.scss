@@ -2,7 +2,7 @@
 
 /* Header Styles
 ---------------------------------------------*/
-header {
+.home-page-header {
     display: flex;
     justify-content: center;
 
@@ -296,6 +296,10 @@ body {
         font-size: 22px;
         margin-left: auto;
         padding-right: 12px;
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 
     p {
