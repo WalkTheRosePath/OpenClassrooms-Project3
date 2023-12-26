@@ -225,12 +225,13 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding-bottom: 50px;
 
         // Media query for tablet
         @include tablet-only {
             flex-direction: row;
             justify-content: space-around;
-            gap: 0;
+            gap: 20px;
             flex-wrap: wrap;
             padding: 20px 0 50px;
         }
@@ -239,9 +240,9 @@ body {
         @include desktop-only {
             flex-direction: row;
             justify-content: space-around;
-            gap: none;
+            gap: 0;
             flex-wrap: wrap;
-            padding: 20px 0;
+            padding: 20px 0 50px 0;
         }
     }
 }
@@ -275,6 +276,7 @@ body {
     .heart-icon {
         font-size: 22px;
         margin-left: auto;
+        padding-right: 12px;
     }
 
     p {
