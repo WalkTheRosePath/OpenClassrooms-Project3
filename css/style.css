@@ -630,6 +630,7 @@ header img {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 0;
+  position: relative;
 }
 .card img {
   display: block;
@@ -638,6 +639,19 @@ header img {
   min-width: 330px;
   max-height: 170px;
   overflow: hidden;
+}
+.card .new-label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 70px;
+  text-align: center;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  z-index: 1;
 }
 .card h3 {
   font-size: 17px;
