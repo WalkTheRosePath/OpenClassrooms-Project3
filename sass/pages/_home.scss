@@ -239,8 +239,8 @@ body {
         // Media query for desktop
         @include desktop-only {
             flex-direction: row;
-            justify-content: space-around;
-            gap: 0;
+            justify-content: center;
+            gap: 40px;
             flex-wrap: wrap;
             padding: 20px 0 50px 0;
         }
