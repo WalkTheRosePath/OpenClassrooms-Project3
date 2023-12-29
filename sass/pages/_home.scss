@@ -288,7 +288,13 @@ body {
         padding-left: 5px;
     }
 
-    .heart-icon {
+    .favorite {
+        &:hover {
+            // TODO Hover effeft on parent that changes opacity of full heart
+        }
+    }
+
+    .heart-icon-empty {
         position: absolute;
         top: 185px;
         right: 15px;
@@ -297,9 +303,7 @@ body {
         margin-left: auto;
         padding-right: 12px;
 
-        &:hover {
-            color: $color-primary;
-        }
+
     }
 
     p {
