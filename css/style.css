@@ -698,4 +698,18 @@ footer h2 {
   max-width: 320px;
 }
 
+.restaurant-page-header {
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 992px) {
+  .restaurant-page-header {
+    justify-content: flex-start;
+  }
+}
+.restaurant-page-header img {
+  width: 175px;
+  padding: 26px 0 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
