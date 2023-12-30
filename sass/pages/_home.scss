@@ -96,12 +96,12 @@ body {
 
         // Media query for tablet
         @include tablet-only {
-            font-size: 32px;
+            font-size: 30px;
         }
 
         // Media query for desktop
         @include desktop-only {
-            font-size: 40px;
+            font-size: 35px;
         }
     }
 

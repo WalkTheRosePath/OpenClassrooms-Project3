@@ -484,12 +484,12 @@ footer h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .explore h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 992px) {
   .explore h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 .explore p {
