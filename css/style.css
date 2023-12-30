@@ -800,7 +800,7 @@ footer h2 {
   z-index: 1;
 }
 
-/* Restaurant Page Entree Section Styles
+/* Restaurant Page Menu Item Styles
 ---------------------------------------------*/
 .menu-item {
   display: flex;
@@ -831,6 +831,7 @@ footer h2 {
   max-width: 380px;
   min-width: 320px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .menu-item-flex-container h3 {
   font-size: 18px;
@@ -838,9 +839,19 @@ footer h2 {
 }
 .menu-item-flex-container p {
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.menu-item-flex-container .strong {
+.menu-item-flex-container .price {
   font-weight: 800;
+  position: absolute;
+  top: 36px;
+  right: 20px;
+}
+.menu-item-flex-container .checkmark {
+  color: #fff;
+  background-color: #99e2d0;
 }
 
 .order-button {

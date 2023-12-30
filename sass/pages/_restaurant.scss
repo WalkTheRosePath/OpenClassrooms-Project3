@@ -42,7 +42,7 @@
         position: relative;
 
         @include desktop-only {
-
+            // TODO Media query for main image
         }
     }
 
@@ -90,7 +90,7 @@
 }
 
 
-/* Restaurant Page Entree Section Styles
+/* Restaurant Page Menu Item Styles
 ---------------------------------------------*/
 
 .menu-item {
@@ -124,6 +124,7 @@
     max-width: 380px;
     min-width: 320px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
 
     h3 {
         font-size: 18px;
@@ -132,10 +133,21 @@
 
     p {
         font-size: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
-    .strong {
+    .price {
         font-weight: 800;
+        position: absolute;
+        top: 36px;
+        right: 20px;
+    }
+
+    .checkmark {
+        color: #fff;
+        background-color: $color-tertiary;
     }
 }
 
