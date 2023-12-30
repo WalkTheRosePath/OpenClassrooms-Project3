@@ -753,24 +753,24 @@ footer h2 {
 
 /* Restaurant Page Entree Section Styles
 ---------------------------------------------*/
-.menu-item-flex-container {
+.menu-item {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   gap: 20px;
 }
-.menu-item-flex-container h2 {
+.menu-item h2 {
   font-size: 16px;
   font-weight: 400;
   padding-left: 10px;
 }
 
-.menu-item {
+.menu-item-flex-container {
   padding: 10px 14px;
   background-color: #fff;
   border-radius: 18px;
 }
-.menu-item h3 {
+.menu-item-flex-container h3 {
   font-size: 18px;
 }
 

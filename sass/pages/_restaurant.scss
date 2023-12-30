@@ -74,7 +74,7 @@
 /* Restaurant Page Entree Section Styles
 ---------------------------------------------*/
 
-.menu-item-flex-container {
+.menu-item {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
@@ -87,7 +87,7 @@
     }
 }
 
-.menu-item {
+.menu-item-flex-container {
     padding: 10px 14px;
     background-color: #fff;
     border-radius: 18px;
