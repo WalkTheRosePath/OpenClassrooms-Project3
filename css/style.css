@@ -732,12 +732,13 @@ footer h2 {
   border-radius: 40px 40px 0 0;
   position: relative;
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 20px 10px;
 }
 .restaurant-page h1 {
   font-family: shrikhand, sans-serif;
   font-size: 28px;
   font-weight: 400;
+  padding-left: 10px;
 }
 .restaurant-page .heart-icon {
   font-size: 22px;
@@ -750,7 +751,27 @@ footer h2 {
   z-index: 1;
 }
 
-/* Restaurant Page Menu Item Styles
+/* Restaurant Page Entree Section Styles
 ---------------------------------------------*/
+.menu-item-flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 20px;
+}
+.menu-item-flex-container h2 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.menu-item {
+  padding: 10px 14px;
+  background-color: #fff;
+  border-radius: 18px;
+}
+.menu-item h3 {
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */
