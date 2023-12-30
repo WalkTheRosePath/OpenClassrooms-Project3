@@ -5,10 +5,19 @@
 ---------------------------------------------*/
 .restaurant-page-header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
 
     @include desktop-only {
         justify-content: flex-start;
+    }
+
+    a {
+        // TODO Move arrow to left
+    }
+
+    i {
+        font-size: 18px;
     }
 
     img {
@@ -23,10 +32,23 @@
 
 /* General Body Styles
 ---------------------------------------------*/
+.restaurant-main {
+    background-color: $color-general-bg;
 
+    &-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h1 {
+        font-family: shrikhand, sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+
+h1 {}
 
 
 /* Menu Item Styles
 ---------------------------------------------*/
-
-
