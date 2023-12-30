@@ -1,6 +1,7 @@
-// Properties for the home page
+// Properties for the Home Page
 
-/* Header Styles
+
+/* Home Page Header Styles
 ---------------------------------------------*/
 .home-page-header {
     display: flex;
@@ -20,7 +21,7 @@
     }
 }
 
-/* General Body Styles
+/* Home Page General Body Styles
 ---------------------------------------------*/
 body {
 
@@ -28,7 +29,7 @@ body {
     @include desktop-only {}
 }
 
-/* Location Section Styles
+/* Home Page Location Section Styles
 ---------------------------------------------*/
 .location {
     display: flex;
@@ -57,7 +58,7 @@ body {
     }
 }
 
-/* Flex Container Holding Explore & How It Works Sections 
+/* Home Page Flex Container Holding 'Explore' & 'How It Works' Sections 
 ---------------------------------------------*/
 .explore-and-how-it-works-flex-container {
     display: flex;
@@ -73,7 +74,7 @@ body {
 }
 
 
-/* Explore Section Styles
+/* Home Page "Explore" Section Styles    
 ---------------------------------------------*/
 .explore {
     display: flex;
@@ -129,7 +130,7 @@ body {
     }
 }
 
-/* How It Works Section Styles
+/* Home Page "How It Works" Section Styles
 ---------------------------------------------*/
 .how-it-works {
     display: flex;
@@ -210,10 +211,10 @@ body {
 
 }
 
-/* Restaurant Section Styles
+/* Home Page "Restaurant" Section Styles
 ---------------------------------------------*/
 
-.restaurant {
+.home-page-restaurant {
     background-color: $color-general-bg;
 
     h2 {

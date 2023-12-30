@@ -1,7 +1,7 @@
-// Restaurant Styles
+// Properties for the Restaurant Pages
 
 
-/* Header Styles
+/* Restaurant Page Header Styles
 ---------------------------------------------*/
 .restaurant-page-header {
     display: flex;
@@ -30,9 +30,9 @@
     }
 }
 
-/* General Body Styles
+/* Restaurant Page Main Styles
 ---------------------------------------------*/
-.restaurant-main {
+.restaurant-page {
     background-color: $color-general-bg;
 
     &-image {
@@ -47,8 +47,6 @@
     }
 }
 
-h1 {}
 
-
-/* Menu Item Styles
+/* Restaurant Page Menu Item Styles
 ---------------------------------------------*/

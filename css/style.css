@@ -398,7 +398,7 @@ footer h2 {
   width: 30px;
 }
 
-/* Header Styles
+/* Home Page Header Styles
 ---------------------------------------------*/
 .home-page-header {
   display: flex;
@@ -419,9 +419,9 @@ footer h2 {
   }
 }
 
-/* General Body Styles
+/* Home Page General Body Styles
 ---------------------------------------------*/
-/* Location Section Styles
+/* Home Page Location Section Styles
 ---------------------------------------------*/
 .location {
   display: flex;
@@ -448,7 +448,7 @@ footer h2 {
   }
 }
 
-/* Flex Container Holding Explore & How It Works Sections 
+/* Home Page Flex Container Holding 'Explore' & 'How It Works' Sections 
 ---------------------------------------------*/
 .explore-and-how-it-works-flex-container {
   display: flex;
@@ -462,7 +462,7 @@ footer h2 {
   }
 }
 
-/* Explore Section Styles
+/* Home Page "Explore" Section Styles    
 ---------------------------------------------*/
 .explore {
   display: flex;
@@ -514,7 +514,7 @@ footer h2 {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* How It Works Section Styles
+/* Home Page "How It Works" Section Styles
 ---------------------------------------------*/
 .how-it-works {
   display: flex;
@@ -586,15 +586,15 @@ footer h2 {
   background-color: #f2eafb;
 }
 
-/* Restaurant Section Styles
+/* Home Page "Restaurant" Section Styles
 ---------------------------------------------*/
-.restaurant {
+.home-page-restaurant {
   background-color: #f6f6f6;
 }
-.restaurant h2 {
+.home-page-restaurant h2 {
   padding: 50px 0 20px 20px;
 }
-.restaurant-cards-flex-container {
+.home-page-restaurant-cards-flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -602,7 +602,7 @@ footer h2 {
   padding: 20px 20px 50px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .restaurant-cards-flex-container {
+  .home-page-restaurant-cards-flex-container {
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
@@ -611,7 +611,7 @@ footer h2 {
   }
 }
 @media screen and (min-width: 992px) {
-  .restaurant-cards-flex-container {
+  .home-page-restaurant-cards-flex-container {
     flex-direction: row;
     justify-content: center;
     gap: 40px;
@@ -698,7 +698,7 @@ footer h2 {
   max-width: 320px;
 }
 
-/* Header Styles
+/* Restaurant Page Header Styles
 ---------------------------------------------*/
 .restaurant-page-header {
   display: flex;
@@ -717,22 +717,22 @@ footer h2 {
   width: 175px;
   padding: 26px 0 20px 0;
 }
-/* General Body Styles
+/* Restaurant Page Main Styles
 ---------------------------------------------*/
-.restaurant-main {
+.restaurant-page {
   background-color: #f6f6f6;
 }
-.restaurant-main-image {
+.restaurant-page-image {
   width: 100%;
   max-width: 400px;
 }
-.restaurant-main h1 {
+.restaurant-page h1 {
   font-family: shrikhand, sans-serif;
   font-size: 26px;
   font-weight: 400;
 }
 
-/* Menu Item Styles
+/* Restaurant Page Menu Item Styles
 ---------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
