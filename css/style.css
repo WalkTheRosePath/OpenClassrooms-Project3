@@ -725,7 +725,7 @@ footer h2 {
   margin: 0 0 -50px 0;
   position: relative;
 }
-.restaurant-page-flex-container {
+.restaurant-page-large-flex-container {
   display: flex;
   flex-direction: column;
   border: none;
@@ -733,6 +733,11 @@ footer h2 {
   position: relative;
   background-color: #f6f6f6;
   padding: 20px 10px;
+}
+.restaurant-page-small-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .restaurant-page h1 {
   font-family: shrikhand, sans-serif;
@@ -751,18 +756,6 @@ footer h2 {
   z-index: 1;
 }
 
-.order-button {
-  color: #fff;
-  background-image: linear-gradient(#ff79da, #9356dc);
-  border: none;
-  width: 220px;
-  height: 50px;
-  border-radius: 25px;
-  margin: 10px 0 50px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  transition: background-image 0.3s, box-shadow 0.3s;
-}
-
 /* Restaurant Page Entree Section Styles
 ---------------------------------------------*/
 .menu-item {
@@ -776,12 +769,23 @@ footer h2 {
   font-weight: 400;
   padding-left: 10px;
 }
+.menu-item hr {
+  width: 13%;
+  height: 3px;
+  margin-left: 10px;
+  margin-right: auto;
+  background-color: #99e2d0;
+  border: 0 none;
+  margin-top: -14px;
+  margin-bottom: -5px;
+}
 
 .menu-item-flex-container {
   padding: 12px 14px 10px;
   background-color: #fff;
   border-radius: 18px;
   max-width: 380px;
+  min-width: 320px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 .menu-item-flex-container h3 {
@@ -790,6 +794,24 @@ footer h2 {
 }
 .menu-item-flex-container p {
   font-size: 15px;
+}
+.menu-item-flex-container .strong {
+  font-weight: 800;
+}
+
+.order-button {
+  color: #fff;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border: none;
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 30px 0 50px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+.order-button:hover {
+  background-image: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
 /*# sourceMappingURL=style.css.map */
