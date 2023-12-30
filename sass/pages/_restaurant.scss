@@ -121,31 +121,40 @@
     padding: 12px 14px 10px;
     background-color: #fff;
     border-radius: 18px;
-    max-width: 380px;
-    min-width: 320px;
+    width: 320px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     position: relative;
 
-    h3 {
-        font-size: 18px;
-        padding-bottom: 3px;
+    .menu-item-squeezer {
+        display: flex;
+        width: 370px;
     }
 
-    p {
-        font-size: 15px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
+    &__description {
+        width: 250px;
+
+        h3 {
+            font-size: 18px;
+            padding-bottom: 3px;
+        }
+
+        p {
+            font-size: 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
     }
 
     .price {
+        width: 70px;
         font-weight: 800;
-        position: absolute;
-        top: 36px;
-        right: 20px;
     }
 
     .checkmark {
+        width: 70px;
+        font-size: 20px;
         color: #fff;
         background-color: $color-tertiary;
     }

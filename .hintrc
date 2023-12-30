@@ -24,6 +24,8 @@
         "button-name": "off"
       }
     ],
-    "meta-charset-utf-8": "off"
+    "meta-charset-utf-8": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off"
   }
 }
