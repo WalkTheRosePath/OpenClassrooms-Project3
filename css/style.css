@@ -921,24 +921,16 @@ footer h2 {
 .restaurant-page .animate.pop {
   animation-name: animate-pop;
   animation-duration: 1s;
-  animation-delay: 0.5s;
 }
 @keyframes animate-pop {
   0% {
     opacity: 0;
+    transform: scale(0.5, 0.5);
   }
   100% {
     opacity: 1;
+    transform: scale(1, 1);
   }
-}
-.restaurant-page .animate.pop .delay-1 {
-  animation-delay: 1s;
-}
-.restaurant-page .animate.pop .delay-2 {
-  animation-delay: 2s;
-}
-.restaurant-page .animate.pop .delay-3 {
-  animation-delay: 3s;
 }
 .restaurant-page .order-button {
   color: #fff;
