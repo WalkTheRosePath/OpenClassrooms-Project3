@@ -880,19 +880,6 @@ footer h2 {
   display: flex;
   width: 370px;
 }
-.restaurant-page .menu-item-squeezer:hover {
-  animation-name: slide-in;
-  animation-duration: 3s;
-}
-@keyframes slide-in {
-  from {
-    margin-left: 100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 .restaurant-page .menu-item-squeezer .price {
   width: 70px;
   font-weight: 800;
@@ -908,6 +895,31 @@ footer h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.restaurant-page .menu-item-squeezer .checkmark-circle {
+  animation: turn 10s linear;
+}
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.restaurant-page .animate.pop {
+  animation-name: animate-pop;
+  animation-duration: 1s;
+}
+@keyframes animate-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
 .restaurant-page .menu-item-flex-container {
   padding: 12px 14px 10px;
@@ -930,20 +942,6 @@ footer h2 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-.restaurant-page .animate.pop {
-  animation-name: animate-pop;
-  animation-duration: 1s;
-}
-@keyframes animate-pop {
-  from {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
 }
 .restaurant-page .order-button {
   color: #fff;

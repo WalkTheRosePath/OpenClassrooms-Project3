@@ -155,23 +155,22 @@
             display: flex;
             width: 370px;
 
-            &:hover {
-                animation-name: slide-in;
-                animation-duration: 3s;
+            // &:hover {
+            //     animation-name: slide-in;
+            //     animation-duration: 3s;
 
-                @keyframes slide-in {
-                    from {
-                        margin-left: 100%;
-                        // width: 300%;
-                    }
+            //     @keyframes slide-in {
+            //         from {
+            //             margin-left: 100%;
+            //             // width: 300%;
+            //         }
 
-                    to {
-                        margin-left: 0%;
-                        width: 100%;
-                    }
-                }
-
-            }
+            //         to {
+            //             margin-left: 0%;
+            //             width: 100%;
+            //         }
+            //     }
+            // }
 
             .price {
                 width: 70px;
@@ -190,35 +189,22 @@
                 justify-content: center;
                 align-items: center;
 
-
-            }
-        }
-    }
-
-    .menu-item-flex-container {
-        padding: 12px 14px 10px;
-        background-color: #fff;
-        border-radius: 18px;
-        width: 320px;
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-        position: relative;
-        overflow: hidden;
-
-        &__description {
-            width: 250px;
-
-            h3 {
-                font-size: 18px;
-                padding-bottom: 3px;
             }
 
-            p {
-                font-size: 15px;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-            }
+            .checkmark-circle {
+                animation: turn 10s linear;
 
+                @keyframes turn {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+            }
         }
     }
 
@@ -250,6 +236,39 @@
         //     animation-delay: 0.9s;
         // }
     }
+
+    .menu-item-flex-container {
+        padding: 12px 14px 10px;
+        background-color: #fff;
+        border-radius: 18px;
+        width: 320px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            // TODO Reduce widths
+        }
+
+        &__description {
+            width: 250px;
+
+            h3 {
+                font-size: 18px;
+                padding-bottom: 3px;
+            }
+
+            p {
+                font-size: 15px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+        }
+    }
+
+
 
 
     .order-button {
