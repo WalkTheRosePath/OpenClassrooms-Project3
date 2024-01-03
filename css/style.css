@@ -903,6 +903,7 @@ footer h2 {
   width: 320px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  overflow: hidden;
 }
 .restaurant-page .menu-item-flex-container__description {
   width: 250px;
@@ -916,6 +917,28 @@ footer h2 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+.restaurant-page .animate.pop {
+  animation-name: animate-pop;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.restaurant-page .animate.pop .delay-1 {
+  animation-delay: 1s;
+}
+.restaurant-page .animate.pop .delay-2 {
+  animation-delay: 2s;
+}
+.restaurant-page .animate.pop .delay-3 {
+  animation-delay: 3s;
 }
 .restaurant-page .order-button {
   color: #fff;

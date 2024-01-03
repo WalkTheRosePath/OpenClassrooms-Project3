@@ -182,6 +182,7 @@
         width: 320px;
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
         position: relative;
+        overflow: hidden;
 
         &__description {
             width: 250px;
@@ -200,6 +201,35 @@
 
         }
     }
+
+    .animate.pop {
+        animation-name: animate-pop;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+
+        @keyframes animate-pop {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .delay-1 {
+            animation-delay: 1s;
+        }
+
+        .delay-2 {
+            animation-delay: 2s;
+        }
+
+        .delay-3 {
+            animation-delay: 3s;
+        }
+    }
+
 
     .order-button {
         color: #fff;
