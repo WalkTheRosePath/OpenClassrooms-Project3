@@ -17,7 +17,7 @@
 
     @keyframes hider {
         to {
-            transform: scale(0%);
+            transform: scale(0);
         }
     }
 
@@ -202,7 +202,7 @@ body {
 
     h2 {
         padding: 40px 0 30px 20px;
-        text-wrap: nowrap;
+        white-space: nowrap;
 
         // Media query for desktop
         @include desktop-only {

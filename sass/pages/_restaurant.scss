@@ -128,7 +128,7 @@
     /* Restaurant Page Menu Item Styles
 ---------------------------------------------*/
 
-    .menu-item {
+    .menu {
         display: flex;
         flex-direction: column;
         padding: 20px 0;
@@ -150,27 +150,41 @@
             margin-top: -14px;
             margin-bottom: -5px;
         }
+    }
 
-        &-squeezer {
+    .menu-item {
+        padding: 12px 14px 10px;
+        background-color: #fff;
+        border-radius: 18px;
+        width: 320px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+
+        &:hover &__squeezer {
+            width: 300px;
+
+        }
+
+        &__squeezer {
             display: flex;
             width: 370px;
 
-            // &:hover {
-            //     animation-name: slide-in;
-            //     animation-duration: 3s;
+            .menu-item__description {
+                width: 250px;
 
-            //     @keyframes slide-in {
-            //         from {
-            //             margin-left: 100%;
-            //             // width: 300%;
-            //         }
+                h3 {
+                    font-size: 18px;
+                    padding-bottom: 3px;
+                }
 
-            //         to {
-            //             margin-left: 0%;
-            //             width: 100%;
-            //         }
-            //     }
-            // }
+                p {
+                    font-size: 15px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
 
             .price {
                 width: 70px;
@@ -189,24 +203,25 @@
                 justify-content: center;
                 align-items: center;
 
-            }
+                &__circle {
+                    animation: turn 10s linear;
 
-            .checkmark-circle {
-                animation: turn 10s linear;
+                    @keyframes turn {
+                        from {
+                            transform: rotate(0deg);
+                        }
 
-                @keyframes turn {
-                    from {
-                        transform: rotate(0deg);
+                        to {
+                            transform: rotate(360deg);
+                        }
                     }
 
-                    to {
-                        transform: rotate(360deg);
-                    }
                 }
-
             }
         }
     }
+
+
 
     .animate.pop {
         animation-name: animate-pop;
@@ -236,40 +251,6 @@
         //     animation-delay: 0.9s;
         // }
     }
-
-    .menu-item-flex-container {
-        padding: 12px 14px 10px;
-        background-color: #fff;
-        border-radius: 18px;
-        width: 320px;
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-        position: relative;
-        overflow: hidden;
-
-        &:hover {
-            // TODO Reduce widths
-        }
-
-        &__description {
-            width: 250px;
-
-            h3 {
-                font-size: 18px;
-                padding-bottom: 3px;
-            }
-
-            p {
-                font-size: 15px;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-            }
-
-        }
-    }
-
-
-
 
     .order-button {
         color: #fff;
