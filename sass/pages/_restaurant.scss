@@ -13,11 +13,10 @@
     }
 
     a {
-        // TODO Move arrow to left
-    }
-
-    i {
-        font-size: 16px;
+        position: absolute;
+        top: 28px;
+        left: 20px;
+        font-size: 20px;
     }
 
     img {
@@ -25,7 +24,7 @@
         padding: 26px 0 14px 0;
 
         @include desktop-only {
-            // TODO Media query for header logo
+            margin-left: 60px;
         }
     }
 }
@@ -37,7 +36,6 @@
 
     &-main-image {
         width: 100%;
-        max-width: 400px;
         margin: 0 0 -50px 0;
         position: relative;
 
