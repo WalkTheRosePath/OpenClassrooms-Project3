@@ -33,7 +33,7 @@
 
 <body>
     <!-- Header -->
-    <header class="restaurant-page-header">
+    <header class="restaurant-page__header">
         <a class="home-arrow" href="../index.html" title="home">
             <i class="fa fa-arrow-left"></i>
         </a>
@@ -43,22 +43,175 @@
     <!-- Main -->
     <main class="restaurant-page">
 
-        <img class="restaurant-page-main-image"
+        <img class="restaurant-page__main-image"
             src="../images/restaurants/4-louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt="Interior of Le Gourmand restaurant">
 
-        <div class="restaurant-page-flex-container">
+        <div class="restaurant-page__large-flex-container">
             <h1>Le Gourmand</h1>
-            <i class="fa fa-heart-o heart-icon"></i>
 
-            <!-- Entree Section -->
+            <div class="restaurant-page__favorite">
+                <i class="fa fa-heart-o heart-icon-empty"></i>
+                <i class="fa fa-heart heart-icon-full"></i>
+            </div>
 
-            <!-- Main Dish Section -->
+            <!-- Menu Item Section -->
+            <div class="restaurant-page__small-flex-container">
 
-            <!-- Dessert Section -->
+                <!-- Entree Section -->
+                <div class="menu">
+                    <h2>ENTREES</h2>
+                    <hr>
 
-            <button class="order-button">Order</button>
+                    <!-- Menu Item 1 -->
+                    <div class="menu-item animate pop">
+
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Tuna Carpaccio</h3>
+                                <p>Seasoned with yuzu</p>
+                            </div>
+                            <div class="price">25€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Menu Item 2 -->
+                    <div class="menu-item animate pop delay-1">
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Crunchy Lobster Croquets</h3>
+                                <p>With seasonal vegetables</p>
+                            </div>
+                            <div class="price">35€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 3 -->
+                    <div class="menu-item animate pop delay-2">
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Mushroom Soup</h3>
+                                <p>With truffles</p>
+                            </div>
+                            <div class="price">20€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Dish Section -->
+                <div class="menu">
+                    <h2>MAIN DISH</h2>
+                    <hr>
+
+                    <!-- Menu Item 4 -->
+                    <div class="menu-item animate pop">
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Roast Chicken with Provincal Herbs</h3>
+                                <p>With truffle cream</p>
+                            </div>
+                            <div class="price">40€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 5 -->
+                    <div class="menu-item animate pop delay-1">
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Roasted Lobster</h3>
+                                <p>With seasonal vegetables</p>
+                            </div>
+                            <div class="price">35€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 6 -->
+                    <div class="menu-item animate pop delay-2">
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Angus Beef Ribs</h3>
+                                <p>With mashed parsnips</p>
+                            </div>
+                            <div class="price">44€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dessert Section -->
+                <div class="menu">
+                    <h2>DESSERTS</h2>
+                    <hr>
+
+                    <!-- Menu Item 7 -->
+                    <div class="menu-item animate pop">
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Assorted Dessert Plate</h3>
+                                <p>Chef's choice</p>
+                            </div>
+                            <div class="price">18€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 8 -->
+                    <div class="menu-item animate pop delay-1">
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Creme Brulee</h3>
+                                <p>Revisited</p>
+                            </div>
+                            <div class="price">22€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 9 -->
+                    <div class="menu-item animate pop delay-2">
+                        <div class="menu-item__squeezer">
+                            <div class="menu-item__description">
+                                <h3>Tiramisu</h3>
+                                <p>With hazelnuts</p>
+                            </div>
+                            <div class="price">23€</div>
+                            <div class="checkmark">
+                                <i class="checkmark__circle fa fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Order Button -->
+            <div class="order-button__flex-container">
+                <button class="order-button">Order</button>
+            </div>
         </div>
+
     </main>
 
     <!-- Footer -->
