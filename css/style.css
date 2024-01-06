@@ -856,6 +856,7 @@ footer h2 {
 .restaurant-page .animate.pop {
   animation-name: animate-pop;
   animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 @keyframes animate-pop {
   from {
