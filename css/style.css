@@ -800,7 +800,7 @@ footer h2 {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .restaurant-page__small-flex-container {
     flex-direction: row;
     gap: 80px;
