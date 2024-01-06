@@ -3,7 +3,7 @@
 
 /* Restaurant Page Header Styles
 ---------------------------------------------*/
-.restaurant-page-header {
+.restaurant-page__header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@
 .restaurant-page {
     background-color: $color-general-bg;
 
-    &-main-image {
+    &__main-image {
         width: 100%;
         object-fit: cover;
         margin: 0 0 -50px 0;
@@ -45,7 +45,7 @@
         }
     }
 
-    &-large-flex-container {
+    &__large-flex-container {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -82,7 +82,7 @@
         }
     }
 
-    &-favorite {
+    &__favorite {
         .heart-icon-empty {
             opacity: 1;
             transition: opacity .2s;
@@ -125,6 +125,7 @@
     }
 
     // .animate.pop {
+        // TODO 
     //     animation-name: animate-pop;
     //     animation-duration: 1s;
 
@@ -248,6 +249,8 @@
     }
 }
 
+/* Restaurant Page Order Button Styles
+---------------------------------------------*/
 .order-button {
     color: #fff;
     background-image: linear-gradient(#ff79da, #9356dc);
