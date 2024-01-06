@@ -781,7 +781,7 @@ footer h2 {
 }
 @media screen and (min-width: 992px) {
   .restaurant-page__main-image {
-    max-height: 500px;
+    max-height: 400px;
   }
 }
 .restaurant-page__large-flex-container {
@@ -852,6 +852,20 @@ footer h2 {
 }
 .restaurant-page__favorite:hover .heart-icon-full {
   opacity: 1;
+}
+.restaurant-page .animate.pop {
+  animation-name: animate-pop;
+  animation-duration: 1s;
+}
+@keyframes animate-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
 
 /* Restaurant Page Menu Styles
