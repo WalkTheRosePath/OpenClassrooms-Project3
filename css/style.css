@@ -772,8 +772,6 @@ footer h2 {
 ---------------------------------------------*/
 .restaurant-page {
   background-color: #f6f6f6;
-  /* Restaurant Page Menu Item Styles
-  ---------------------------------------------*/
 }
 .restaurant-page-main-image {
   width: 100%;
@@ -821,7 +819,7 @@ footer h2 {
     padding-left: 30px;
   }
 }
-.restaurant-page .restaurant-page-favorite .heart-icon-empty {
+.restaurant-page-favorite .heart-icon-empty {
   opacity: 1;
   transition: opacity 0.2s;
   position: absolute;
@@ -834,7 +832,7 @@ footer h2 {
   padding-right: 12px;
   border: none;
 }
-.restaurant-page .restaurant-page-favorite .heart-icon-full {
+.restaurant-page-favorite .heart-icon-full {
   transition: opacity 0.5s;
   position: absolute;
   top: 40px;
@@ -849,24 +847,27 @@ footer h2 {
   color: transparent;
   opacity: 0;
 }
-.restaurant-page .restaurant-page-favorite:hover .heart-icon-empty {
+.restaurant-page-favorite:hover .heart-icon-empty {
   opacity: 0;
 }
-.restaurant-page .restaurant-page-favorite:hover .heart-icon-full {
+.restaurant-page-favorite:hover .heart-icon-full {
   opacity: 1;
 }
-.restaurant-page .menu {
+
+/* Restaurant Page Menu Styles
+---------------------------------------------*/
+.menu {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   gap: 20px;
 }
-.restaurant-page .menu h2 {
+.menu h2 {
   font-size: 16px;
   font-weight: 400;
   padding-left: 10px;
 }
-.restaurant-page .menu hr {
+.menu hr {
   width: 13%;
   height: 3px;
   margin-left: 10px;
@@ -876,8 +877,8 @@ footer h2 {
   margin-top: -14px;
   margin-bottom: -5px;
 }
-.restaurant-page .menu-item {
-  padding: 12px 14px 10px;
+
+.menu-item {
   background-color: #fff;
   border-radius: 18px;
   width: 320px;
@@ -885,44 +886,11 @@ footer h2 {
   position: relative;
   overflow: hidden;
 }
-.restaurant-page .menu-item:hover .restaurant-page .menu-item__squeezer {
-  width: 300px;
+.menu-item:hover .menu-item__squeezer {
+  width: 320px;
 }
-.restaurant-page .menu-item__squeezer {
-  display: flex;
-  width: 370px;
-}
-.restaurant-page .menu-item__squeezer .menu-item__description {
-  width: 250px;
-}
-.restaurant-page .menu-item__squeezer .menu-item__description h3 {
-  font-size: 18px;
-  padding-bottom: 3px;
-}
-.restaurant-page .menu-item__squeezer .menu-item__description p {
-  font-size: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.restaurant-page .menu-item__squeezer .price {
-  width: 70px;
-  font-weight: 800;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
-.restaurant-page .menu-item__squeezer .checkmark {
-  width: 70px;
-  font-size: 20px;
-  color: #fff;
-  background-color: #99e2d0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.restaurant-page .menu-item__squeezer .checkmark__circle {
-  animation: turn 10s linear;
+.menu-item:hover .menu-item__squeezer .checkmark__circle {
+  animation: turn 0.5s linear forwards;
 }
 @keyframes turn {
   from {
@@ -932,21 +900,43 @@ footer h2 {
     transform: rotate(360deg);
   }
 }
-.restaurant-page .animate.pop {
-  animation-name: animate-pop;
-  animation-duration: 1s;
+.menu-item__squeezer {
+  display: flex;
+  width: 390px;
+  transition: width 0.5s;
 }
-@keyframes animate-pop {
-  from {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
+.menu-item__squeezer .menu-item__description {
+  width: 250px;
+  padding: 12px 14px 10px;
 }
-.restaurant-page .order-button {
+.menu-item__squeezer .menu-item__description h3 {
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+.menu-item__squeezer .menu-item__description p {
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-item__squeezer .price {
+  width: 70px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+.menu-item__squeezer .checkmark {
+  width: 70px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-button {
   color: #fff;
   background-image: linear-gradient(#ff79da, #9356dc);
   border: none;
@@ -957,11 +947,11 @@ footer h2 {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   transition: background-image 0.3s, box-shadow 0.3s;
 }
-.restaurant-page .order-button:hover {
+.order-button:hover {
   background-image: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
-.restaurant-page .order-button-flex-container {
+.order-button-flex-container {
   display: flex;
   justify-content: center;
 }
