@@ -55,7 +55,6 @@
         z-index: 0;
         background-color: $color-general-bg;
         padding: 20px 10px;
-
     }
 
     &__small-flex-container {
@@ -69,13 +68,19 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+
+        @include tablet-only {
+            flex-direction: row;
+            gap: 25px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
     }
 
     h1 {
         font-family: shrikhand, sans-serif;
         font-size: 28px;
         font-weight: 400;
-        padding-left: 10px;
 
         @include desktop-only {
             padding-left: 30px;

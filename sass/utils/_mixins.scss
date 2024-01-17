@@ -1,4 +1,4 @@
-// Mixins to create multiple rulesets
+// Used for creating multiple rulesets, mixins use @content as placeholders for @include
 
 @mixin desktop-only {
     @media screen and (min-width: 992px) {
