@@ -775,9 +775,15 @@ footer h2 {
 }
 .restaurant-page__main-image {
   width: 100%;
+  max-height: 250px;
   object-fit: cover;
   margin: 0 0 -50px 0;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurant-page__main-image {
+    max-height: 350px;
+  }
 }
 @media screen and (min-width: 992px) {
   .restaurant-page__main-image {
@@ -820,7 +826,7 @@ footer h2 {
   font-family: shrikhand, sans-serif;
   font-size: 28px;
   font-weight: 400;
-  padding-right: 40px;
+  padding: 0 40px 0 10px;
 }
 @media screen and (min-width: 992px) {
   .restaurant-page h1 {
