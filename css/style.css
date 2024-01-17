@@ -853,21 +853,6 @@ footer h2 {
 .restaurant-page__favorite:hover .heart-icon-full {
   opacity: 1;
 }
-.restaurant-page .animate.pop {
-  animation-name: animate-pop;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
-@keyframes animate-pop {
-  from {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
-}
 
 /* Restaurant Page Menu Styles
 ---------------------------------------------*/
@@ -900,9 +885,36 @@ footer h2 {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  animation-name: loading-menu-item;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menu-item.delay-1 {
+  animation-delay: 50ms;
+}
+.menu-item.delay-2 {
+  animation-delay: 100ms;
+}
+.menu-item.delay-3 {
+  animation-delay: 150ms;
+}
+@keyframes loading-menu-item {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu-item:hover .menu-item__squeezer {
   width: 320px;
+}
+.menu-item:hover .menu-item__squeezer .menu-item__description {
+  width: 180px;
 }
 .menu-item:hover .menu-item__squeezer .checkmark__circle {
   animation: turn 0.5s linear forwards;
@@ -923,10 +935,14 @@ footer h2 {
 .menu-item__squeezer .menu-item__description {
   width: 250px;
   padding: 12px 14px 10px;
+  transition: width 0.5s;
 }
 .menu-item__squeezer .menu-item__description h3 {
   font-size: 18px;
   padding-bottom: 3px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu-item__squeezer .menu-item__description p {
   font-size: 15px;

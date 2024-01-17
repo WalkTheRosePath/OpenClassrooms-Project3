@@ -123,36 +123,6 @@
             }
         }
     }
-
-    .animate.pop {
-        animation-name: animate-pop;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-
-        @keyframes animate-pop {
-            from {
-                opacity: 0;
-                transform: scale(0.5, 0.5);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1, 1);
-            }
-        }
-
-        // .delay-1 {
-        //     animation-delay: .3s;
-        // }
-
-        // .delay-2 {
-        //     animation-delay: .6s;
-        // }
-
-        // .delay-3 {
-        //     animation-delay: .9s;
-        // }
-    }
 }
 
 /* Restaurant Page Menu Styles
@@ -188,9 +158,43 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    opacity: 0;
+
+    animation-name: loading-menu-item;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+    &.delay-1 {
+        animation-delay: 50ms;
+    }
+
+    &.delay-2 {
+        animation-delay: 100ms;
+    }
+
+    &.delay-3 {
+        animation-delay: 150ms;
+    }
+
+    @keyframes loading-menu-item {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
     &:hover &__squeezer {
         width: 320px;
+
+        .menu-item__description {
+            width: 180px;
+        }
 
         .checkmark__circle {
             animation: turn 0.5s linear forwards;
@@ -215,10 +219,14 @@
         .menu-item__description {
             width: 250px;
             padding: 12px 14px 10px;
+            transition: width 0.5s;
 
             h3 {
                 font-size: 18px;
                 padding-bottom: 3px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
             }
 
             p {
